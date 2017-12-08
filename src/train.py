@@ -1,4 +1,5 @@
-# Author: Bichen Wu (bichen@berkeley.edu) 08/25/2016
+# Initial Author: Bichen Wu (bichen@berkeley.edu) 08/25/2016
+# Author Chenghung Yeh (yeh@wustl.edu)
 
 """Train"""
 
@@ -21,6 +22,7 @@ from config import *
 from dataset import pascal_voc, kitti
 from utils.util import sparse_to_dense, bgr_to_rgb, bbox_transform
 from nets import *
+from PIL import Image, ImageDraw
 
 FLAGS = tf.app.flags.FLAGS
 
@@ -66,10 +68,14 @@ def _draw_box(im, box_list, label_list, color=(0,255,0), cdict=None, form='cente
       c = color
 
     # draw box
-    cv2.rectangle(im, (xmin, ymin), (xmax, ymax), c, 1)
+    # cv2.rectangle(im, (xmin, ymin), (xmax, ymax), c, 1)
+
+    draw = ImageDraw.Draw(im)
+    draw.rectangle([xmin, ymin, xmax, ymax], fill=None, outline=128)
+
     # draw label
-    font = cv2.FONT_HERSHEY_SIMPLEX
-    cv2.putText(im, label, (xmin, ymax), font, 0.3, c, 1)
+    # font = cv2.FONT_HERSHEY_SIMPLEX
+    # cv2.putText(im, label, (xmin, ymax), font, 0.3, c, 1)
 
 def _viz_prediction_result(model, images, bboxes, labels, batch_det_bbox,
                            batch_det_class, batch_det_prob):
