@@ -47,6 +47,8 @@ The following instructions are written for Linux-based distros.
     sudo apt-get update
     sudo apt-get install python-pip
     ```
+https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#1
+
 ## Demo:
 - Download SqueezeDet model parameters from [here](https://www.dropbox.com/s/a6t3er8f03gdl4z/model_checkpoints.tgz?dl=0), untar it, and put it under `$SQDT_ROOT/data/` If you are using command line, type:
 
