@@ -70,6 +70,17 @@ The following instructions are written for Linux-based distros.
 
 - SqueezeDet is a real-time object detector, which can be used to detect videos. The video demo will be released later.
 
+- Demo in local PC
+  ```Shell
+~/squeezeDet$ python ./src/demo_v3_PIL.py  --input_path="./../one_half_x/obje-detection-crowdai/*.jpg"  --out_dir="result/"
+
+  ```
+- Demo in DrivePX docker
+  ```Shell
+~/squeezeDet$ python3 ./src/demo_v3_PIL.py  --input_path="./../one_half_x/obje-detection-crowdai/*.jpg"  --out_dir="result/"
+
+  ```
+
 ## Training/Validation:
 - Download KITTI object detection dataset: [images](http://www.cvlibs.net/download.php?file=data_object_image_2.zip) and [labels](http://www.cvlibs.net/download.php?file=data_object_label_2.zip). Put them under `$SQDT_ROOT/data/KITTI/`. Unzip them, then you will get two directories:  `$SQDT_ROOT/data/KITTI/training/` and `$SQDT_ROOT/data/KITTI/testing/`. 
 
