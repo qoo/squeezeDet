@@ -73,7 +73,10 @@ https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#1
 - SqueezeDet is a real-time object detector, which can be used to detect videos. The video demo will be released later.
 
 - Demo in local PC
-
+  ```Shell
+  python ./src/demo_v3_PIL.py  --input_path="./../one_half_x/object-detection-crowdai/*.jpg"  --out_dir="result/"
+  ```
+- Demo in DrivePX docker
   ```Shell
   python3 ./src/demo_v3_PIL.py  --input_path="./../one_half_x/object-detection-crowdai/*.jpg"  --out_dir="result/"
   ```
