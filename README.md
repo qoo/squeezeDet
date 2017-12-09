@@ -79,10 +79,16 @@ https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#1
 - Demo in DrivePX docker. 
 - Change requirement.txt
   ```Shell
-easydict==1.6
-joblib==0.10.3
-numpy==1.12.0
-Pillow==4.0.0
+    easydict==1.6
+    joblib==0.10.3
+    numpy==1.12.0
+    Pillow==4.0.0
+  ```
+- Change python2 syntax to python3
+
+- Run python3
+  ```Shell
+  python3 ./src/demo_v3_PIL.py  --input_path="./../one_half_x/object-detection-crowdai/*.jpg"  --out_dir="result/"
   ```
 
 ## Training/Validation:
