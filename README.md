@@ -75,6 +75,7 @@ https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#1
 - Demo in local PC
 
   ```Shell
+  python3 ./src/demo_v3_PIL.py  --input_path="./../one_half_x/object-detection-crowdai/*.jpg"  --out_dir="result/"
   ```
 
 ## Training/Validation:
