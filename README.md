@@ -72,7 +72,10 @@ https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#1
 
 - SqueezeDet is a real-time object detector, which can be used to detect videos. The video demo will be released later.
 
+- Demo in local PC
 
+  ```Shell
+  ```
 
 ## Training/Validation:
 - Download KITTI object detection dataset: [images](http://www.cvlibs.net/download.php?file=data_object_image_2.zip) and [labels](http://www.cvlibs.net/download.php?file=data_object_label_2.zip). Put them under `$SQDT_ROOT/data/KITTI/`. Unzip them, then you will get two directories:  `$SQDT_ROOT/data/KITTI/training/` and `$SQDT_ROOT/data/KITTI/testing/`. 
