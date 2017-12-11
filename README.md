@@ -77,14 +77,19 @@ https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#1
   python ./src/demo_v3_PIL.py  --input_path="./../one_half_x/object-detection-crowdai/*.jpg"  --out_dir="result/"
   ```
 - Demo in DrivePX docker. 
-- Change requirement.txt
+- Change requirement.txt. Remove OpenCV. You may remove tensorflow if the docker image already includes it. 
   ```Shell
     easydict==1.6
     joblib==0.10.3
     numpy==1.12.0
     Pillow==4.0.0
   ```
-- Change python2 syntax to python3
+- Use pip to install required Python packages:
+    
+    ```Shell
+    pip install -r requirements.txt
+    ```
+- Change python2 syntax to python3. This part was done.
 
 - Run python3
   ```Shell
